@@ -1,0 +1,57 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  position: relative;
+  margin: 5px 0;
+}
+.block::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 100%;
+  border: solid 1px #d3d3d3;
+  border-width: 1px 0 1px 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block>div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.block[data-busy=true]>div {
+  background: url('loader.svg') center right no-repeat;
+  background-size: 50px;
+}
+.block>textarea {
+  border: none;
+  background-color: #ffffe8;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+}
+.block>textarea:focus {
+  background-color: #FFFFD1;
+}
+.block>div,
+{
+  flex: 1;
+}
+/* types */
+.result.string {
+  color: #cd4442;
+}
+.result.number,
+.result.Array,
+.result.Matrix {
+  color: #3622d5;
+}
+.result.error {
+  color: red;
+}
+.result.empty {
+  color: #ccc;
+  font-style: italic;
+}
