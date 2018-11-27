@@ -1,9 +1,10 @@
 {
   "manifest_version": 2,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name":"Math Studio",
   "description": "Evaluate complex mathematical formula and plot them in a workspace like Matematica",
 
+  "homepage_url": "http://add0n.com/math-studio.html",
   "permissions": [
     "storage",
     "contextMenus"
